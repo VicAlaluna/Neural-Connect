@@ -1,0 +1,106 @@
+/*estilo general*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 70, 70);
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+    background: url(img\cerebro.png);
+   background-size: cover;
+   background-position: center;
+}
+h1 {
+    font-size: 2.5rem;
+    color: rgb(212, 25, 25);
+    font-weight: 800;
+}
+/*barra de inicio en el encabezado*/
+.barra {
+    position: inherit;
+    height: 64px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.barra a {
+    text-decoration: none;
+    color: rgb(199, 30, 30);
+    font-size: 18px;
+    display: inline-flex
+}
+.nombre-encabezado {
+    display: flex;
+    justify-content: space-between;
+
+}
+.nombre-encabezado  h1, b {
+    font-size:1.5rem;
+    margin-top: 1rem;
+    line-height: 32px;
+    text-align: left;
+    color:blueviolet
+    
+}
+.logo h1 {
+    align-items: start;
+    width: 45px;
+    height: auto;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    color:
+    rgb(67, 36, 95)
+}
+.logo h4, b {
+    font-size:1.5rem;
+    margin-top: 1rem;
+    line-height: 32px;
+    text-align: left;
+    color:blueviolet
+    
+}
+/* lista del lado derechi superior para la navegacion*/
+.navegacion-lista ul {
+    padding: 0 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+  .navegacion-lista li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+.navegacion-lista ul li:hover {
+        color: teal;
+        background-color: rgb(219, 219, 219) ;
+        
+    }
+
+/* primer banner */
+.primer-banner{
+    display: flex;
+    background-color: rgb(26, 180, 167);
+    width: 100%;
+    padding-top: 64px;
+    margin: 0;
+}
+.primer-banner {
+    background-image: url(img/primer-banner.png);
+    background-repeat: round;
+    height: 400px;
+    margin: 0;
+    padding: 32px 24px;
+}
+.contenido-banner h2 {
+    line-height: 4rem;
+    font-weight: 900;
+    width: 30%;
+    padding-top:6rem ;
+    margin: 0;
+    line-height: 2.5rem;
+}
