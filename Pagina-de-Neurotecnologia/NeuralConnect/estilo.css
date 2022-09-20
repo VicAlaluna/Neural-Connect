@@ -1,13 +1,10 @@
 /*estilo general*/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(70, 70, 70);
+    color: rgb(23, 8, 68);
     margin: 0;
     font-size: 16px;
     line-height: 1.3em;
-    background: url(img\cerebro.png);
-   background-size: cover;
-   background-position: center;
 }
 h1 {
     font-size: 2.5rem;
@@ -16,17 +13,17 @@ h1 {
 }
 /*barra de inicio en el encabezado*/
 .barra {
-    position: inherit;
+    position: fixed;
     height: 64px;
     width: 100%;
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    
+    background-color: #ccd;
     
 }
 
 .barra a {
     text-decoration: none;
-    color: rgb(199, 30, 30);
     font-size: 18px;
     display: inline-flex
 }
@@ -40,24 +37,24 @@ h1 {
     margin-top: 1rem;
     line-height: 32px;
     text-align: left;
-    color:blueviolet
+    color:rgb(34, 5, 138);
     
 }
 .logo h1 {
     align-items: start;
+    font-size:2.3rem;
     width: 45px;
     height: auto;
     padding-left: 24px;
     padding-bottom: 20px;
-    color:
-    rgb(67, 36, 95)
+    color: rgb(31, 11, 104);
 }
 .logo h4, b {
-    font-size:1.5rem;
+    font-size:2.3rem;
     margin-top: 1rem;
     line-height: 32px;
     text-align: left;
-    color:blueviolet
+    color: rgb(34, 5, 138);
     
 }
 /* lista del lado derechi superior para la navegacion*/
@@ -82,25 +79,42 @@ h1 {
     }
 
 /* primer banner */
-.primer-banner{
-    display: flex;
-    background-color: rgb(26, 180, 167);
-    width: 100%;
-    padding-top: 64px;
-    margin: 0;
-}
+
 .primer-banner {
     background-image: url(img/primer-banner.png);
     background-repeat: round;
-    height: 400px;
+    padding-top: 100px;
+    background-position-y: center;
+    background-blend-mode: multiply;
+    display: flex;
+    background-color: rgb(172 154 177);
+}
+
+
+.contenido-banner {
+    background-color: gray;
+    font-weight: 900;
+    width: 40%;
     margin: 0;
-    padding: 32px 24px;
+    line-height: 2rem;
+    text-align: left;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    display: block;
+    padding: 2rem;
 }
 .contenido-banner h2 {
-    line-height: 4rem;
-    font-weight: 900;
-    width: 30%;
-    padding-top:6rem ;
-    margin: 0;
-    line-height: 2.5rem;
+    font-size: 2rem;
+}
+
+.botones-1
+{
+    align-items: center;
+    margin-left: 40%;
+
+}
+.botones-2{
+
+    align-items: center;
+    margin-left: 40%;
 }
