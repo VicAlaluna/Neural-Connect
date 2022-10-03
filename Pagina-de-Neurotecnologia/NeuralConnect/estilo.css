@@ -57,7 +57,7 @@ h1 {
     color: rgb(34, 5, 138);
     
 }
-/* lista del lado derechi superior para la navegacion*/
+/* lista del lado derecho superior para la navegacion*/
 .navegacion-lista ul {
     padding: 0 2rem;
     list-style: none;
@@ -75,7 +75,7 @@ h1 {
 .navegacion-lista ul li:hover {
         color: teal;
         background-color: rgb(219, 219, 219) ;
-        
+    
     }
 
 /* primer banner */
@@ -87,7 +87,7 @@ h1 {
     background-position-y: center;
     background-blend-mode: multiply;
     display: flex;
-    background-color: rgb(172 154 177);
+    background-color: rgb(232 228 233);
 }
 
 
@@ -102,19 +102,43 @@ h1 {
     margin-bottom: 4%;
     display: block;
     padding: 2rem;
+    opacity: 80%;
 }
 .contenido-banner h2 {
     font-size: 2rem;
 }
 
-.botones-1
+/* Botones de la pagina */
+.espacio-botones1
 {
-    align-items: center;
-    margin-left: 40%;
-
+    display: flex;
 }
-.botones-2{
-
+.espacio-botones2{
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+.botones
+{
+    display: inline-flex;
     align-items: center;
-    margin-left: 40%;
+    margin: 2px;
+    padding: 5%;
+    width: 40%;
+    background-color: rgb(170, 149, 190);
+    border-style: ridge;
+    
+}
+#size-img {
+    width: 80%;
+}
+.botones h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(37, 36, 36);
+    font-size: larger;
+}
+.botones:hover {
+    color: rgb(208, 162, 231);
+    background-color: rgb(90, 87, 87);
 }
