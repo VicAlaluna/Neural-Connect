@@ -1,15 +1,18 @@
 /*estilo general*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(23, 8, 68);
     margin: 0;
     font-size: 16px;
     line-height: 1.3em;
+    font-family: 'Roboto', sans-serif;
 }
 h1 {
     font-size: 2.5rem;
     color: rgb(212, 25, 25);
     font-weight: 800;
+    width: 200px;
 }
 /*barra de inicio en el encabezado*/
 .barra {
@@ -20,23 +23,44 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between ;
-    background-color: #ccd;
+    background-color: rgb(192, 192, 192);
     z-index: 1000;}
    
 
-.barra .logo  {
+.barra .marca  {
     font-weight: bolder;
     font-size:1.5rem;
     color:rgb(34, 5, 138);
+    display: flex;
 }
-.logo h1 {
-    align-items: start;
-    font-size:2.3rem;
+img {
+    display: flex;
+    position: relative;
+    width: 13%;
+    top: 2px;
+}
+.logo {
+    display: flex;
+    position: relative;
+    left:4px;
+}
+h2 p {
+    color: #eee;
+}
+.marca h1 {
+    
+    font-size:2.5rem;
     height: auto;
     padding-left: 24px;
     color: rgb(31, 11, 104);
+    position: absolute;
+    left: 52px;
+    top: 5px;
 }
-.logo b {
+a h1 .marca {
+    width: 25%;
+}
+.marca b {
     font-size:2.3rem;
     margin-top: 1rem;
     text-align: left;
@@ -55,38 +79,46 @@ h1 {
 .navegacion-lista ul li{
     position: relative;
     float: left;
+    right: 20%;
 
 }
 
 .navegacion-lista ul li a {
     font-size: 20px;
     padding: 20px;
-    color:#333 ;
+    color:rgb(32, 32, 34) ;
     display: block;
 }
 
 .navegacion-lista ul li a:hover {
-    background-color: #333;
+    
     color:#fff;
+    background-color: rgb(98, 3, 187);
+    border-radius: 50px;
+    border-color: 2px solid rgb(0, 0, 0);
 }
 .navegacion-lista ul li ul {
     position: absolute;
     left: 0;
+    right: 20px;
+    margin-left: 5px;
     align-items: center;
     width: 200px;
-    background-color: #fff;
+    background-color: rgb(193, 192, 194);
     display: none;
 }
 .navegacion-lista ul li ul li {
     width: 100%;
-    border-top: 1px solid rgb(23, 8, 68);
+    border-top: 1px solid rgb(137, 137, 139);
 }
 
 .navegacion-lista ul li:hover> ul{
     display: initial;
+    
 }
 #menu-adaptable {
     display: none;
+    margin-left: 1px;
 }
 .navegacion-lista label{
     font-size: 20px;
@@ -98,11 +130,80 @@ h1 {
 label {
     display: none;
 }
+h1::first-letter{
+    color: rgb(219, 108, 4);
+}
 
+@media (max-width: 1141px){
+    header{
+        flex-direction: column;
+    }
 
-@media(max-width:991px) {
+    nav{
+        padding: 10px 0px;
+    }
+    .marca a {
+        position: relative;
+    }
+    .marca h1 {
+        
+        left: 35%;
+        padding-left: 0;
+        padding-top: 10px;
+        margin: 15px 0 15px 0px;
+        position: absolute;
+    }
+    .logo  {
+        margin-right:0px ;
+        left: 20px;
+    }
+    .navegacion-lista ul{
+        margin-top: 0;
+        left: 10%;
+        position: relative;
+    }
+    .navegacion-lista ul li a {
+        font-size: 20px;
+        padding: 20px;
+        color: #333;
+        display: flex;}
+    .primer-banner{
+        margin-top: 70px;
+    }
+}
+@media(max-width:750px) {
+    header{
+        display: inline-flex;
+    }
+    h1 {
+        width: 100%;
+    }
+    a{
+        position: relative;
+        float: left;
+        left: 10px;
+    }
+    .nombre{
+        position: relative;
+        display: flex;
+        float: left;
+
+    }
+    .logo img {
+        display: none;
+         position: relative;
+        width: 12%;
+        float: left;
+        margin-right: 2px;
+    }
+    .logo {
+        display: flex;
+        position: relative;
+        
+    }
+
     .navegacion-lista{
-        padding: 20px;}
+        padding: 10px;}
     
     label{
         display: initial;
@@ -126,6 +227,10 @@ label {
         background-color: #eee;
         left: 0;
     }
+    #menu-adaptable {
+        position: relative;
+        float: right;
+    }
     #menu-adaptable:checked ~ .navegacion-lista {
         display: initial;
     }
@@ -145,7 +250,8 @@ label {
 
 
 .contenido-banner {
-    background-color: gray;
+    background-color: rgb(182, 101, 26);
+    opacity: 95%;
     font-weight: 900;
     width: 40%;
     margin: 0;
@@ -156,8 +262,27 @@ label {
     display: block;
     padding: 2rem;
 }
+.boton-mono {
+    width: 95%;
+    background-color: lightgrey;
+    border-radius: 40px;
+    text-align: center;
+}
+.boton-mono:hover {
+    background-color: rgb(150, 150, 150);
+    border: 1px soli rgb(23, 8, 68);
+}
+.contenido-banner a {
+    
+    padding: 10px;
+    text-align: center;
+}
 .contenido-banner h2 {
     font-size: 2rem;
+    color: rgb(9, 0, 58);
+}
+.contenido-banner p{
+    color: rgb(25, 28, 65);
 }
 
 /* Botones de la pagina */
