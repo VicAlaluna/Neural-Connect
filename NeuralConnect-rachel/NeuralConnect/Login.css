@@ -1,18 +1,10 @@
 /*estilo general*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-body {
-    color: rgb(23, 8, 68);
+*{
     margin: 0;
-    font-size: 16px;
-    line-height: 1.3em;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-}
-h1 {
-    font-size: 2.5rem;
-    color: rgb(212, 25, 25);
-    font-weight: 800;
-    width: 200px;
 }
 /*barra de inicio en el encabezado*/
 header{
@@ -36,18 +28,7 @@ header{
     color:rgb(34, 5, 138);
     display: flex;
 }
-/*logo*/
-img {
-    display: flex;
-    position: relative;
-    width: 13%;
-    top: 2px;
-}
-.logo {
-    display: flex;
-    position: relative;
-    left:4px;
-}
+
 h2 p {
     color: #eee;
 }
@@ -73,17 +54,19 @@ a h1 .marca {
 }
 
     /* lista del lado derecho superior para la navegacion*/
-
+.navegacion-lista {
+    position: relative;
+    right: 10%;
+}
 
 .navegacion-lista ul{
     list-style: none;
-
+    right: 20%;
 }
 
 .navegacion-lista ul li{
     position: relative;
-    float: left;
-    right: 20%;
+    float: right;
 
 }
 
@@ -104,7 +87,8 @@ a h1 .marca {
 .navegacion-lista ul li ul {
     position: absolute;
     left: 0;
-    right: 20px;
+   right: 20px;
+
     margin-left: 5px;
     align-items: center;
     width: 200px;
@@ -242,89 +226,157 @@ h1::first-letter{
     }
     
 }
-
-/* primer banner */
-.primer-banner {
-    background-image: url(img/primer-banner.png);
-    background-repeat: round;
-    padding-top: 100px;
-    background-position-y: center;
-    background-blend-mode: multiply;
-    display: flex;
-    background-color: rgb(232 228 233);
-    height: 600px;
-}
-
-
-.contenido-banner {
-    background-color: rgb(182, 101, 26);
-    opacity: 95%;
-    font-weight: 900;
-    width: 40%;
-    margin: 0;
-    line-height: 2rem;
-    text-align: left;
-    margin-left: 4%;
-    margin-bottom: 4%;
-    display: block;
-    padding: 2rem;
-}
-.boton-mono {
-    width: 95%;
-    background-color: lightgrey;
-    border-radius: 40px;
-    text-align: center;
-}
-.boton-mono:hover {
-    background-color: rgb(150, 150, 150);
-    border: 1px soli rgb(23, 8, 68);
-}
-.contenido-banner a {
-    
-    padding: 10px;
-    text-align: center;
-}
-.contenido-banner h2 {
-    line-height: normal;
-    font-size: 2.5rem;
-    color: rgb(9, 0, 58);
-}
-.contenido-banner p{
-    color: rgb(25, 28, 65);
-    font-size: 1.4rem;
-}
-
-/* Botones de la pagina */
-.espacio-botones1
-{
-    display: flex;
-}
-.espacio-botones2{
-    display: flex;
-}
-a {
+a{
     text-decoration: none;
 }
-.botones
-{
-    display: inline-flex;
+
+body {
+    height: 100vh;
+    display: flex;
     align-items: center;
-    margin: 2px;
-    padding: 5%;
-    width: 40%;
-    background-color: rgb(170, 149, 190);
-    border-style: ridge;
+    justify-content: center;
+    background-image: url(Neural\ Connect.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container-login {
+    
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .3s ease-out;
+    background-color: #333;
+    opacity: 90%;
+}
+.container-login·sign-in{
+    background-color: aqua;
+}
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    opacity: 90;
+}
+.message {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(93, 9, 146);
     
 }
-#size-img {
-    width: 80%;
+.message h2{
+    font-size: 1.7rem;
+    padding: 1rem 0;
 }
-.botones h3 {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(37, 36, 36);
-    font-size: larger;
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgb(253, 130, 22);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    
+    color: rgb(225, 224, 224);
 }
-.botones:hover {
-    color: rgb(208, 162, 231);
-    background-color: rgb(90, 87, 87);
+.message button:hover{
+    background-color: rgb(228, 220, 228);
+    padding: 1.2rem;
+    background-color: rgba(167, 39, 241, 0.602);
+    text-align: center;
 }
+.create-account {
+    padding: 2.7rem;
+    font-size: 1.7rem;
+}
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.icon {
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem;
+    border: solid thin rgb(29, 29, 29);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .1s ease-in;
+    
+
+}
+.icon:hover{
+    background-color: rgb(243, 132, 22);
+    cursor: pointer;
+
+}
+.free-account {
+    padding: 2rem 0;
+    text-align: center;
+}
+.formulario{
+
+    display: relative;
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: gainsboro;
+    color: rgb(38, 38, 38);
+}
+.formulario input{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(60, 59, 59) thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: rgb(31, 31, 31);
+}
+
+.formulario input[type="button"]{
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: rgb(46, 45, 45);
+}
+.formulario input[type="text"]{
+    color: rgb(50, 49, 49);
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.sign-in.active{
+    opacity: 1;
+    visibility: visible;
+}
+.sign-up.active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
