@@ -1,0 +1,375 @@
+/*estilo general*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*barra de inicio en el encabezado*/
+header{
+    display: block;
+}
+.barra {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0 2px 10px rgb(37, 36, 36);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    background-color: rgb(192, 192, 192);
+    z-index: 1000;}
+   
+
+.barra .marca  {
+    font-weight: bolder;
+    font-size:1.5rem;
+    color:rgb(34, 5, 138);
+    display: flex;
+}
+
+h2 p {
+    color: #eee;
+}
+.marca h1 {
+    
+    font-size:2.5rem;
+    height: auto;
+    padding-left: 24px;
+    color: rgb(31, 11, 104);
+    position: absolute;
+    left: 52px;
+    top: 5px;
+}
+a h1 .marca {
+    width: 25%;
+}
+.marca b {
+    font-size:2.3rem;
+    margin-top: 1rem;
+    text-align: left;
+    color: rgb(34, 5, 138);
+    
+}
+
+    /* lista del lado derecho superior para la navegacion*/
+.navegacion-lista {
+    position: relative;
+    right: 10%;
+}
+
+.navegacion-lista ul{
+    list-style: none;
+    right: 20%;
+}
+
+.navegacion-lista ul li{
+    position: relative;
+    float: right;
+
+}
+
+.navegacion-lista ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color:rgb(32, 32, 34) ;
+    display: block;
+}
+
+.navegacion-lista ul li a:hover {
+    
+    color:#fff;
+    background-color: rgb(98, 3, 187);
+    border-radius: 50px;
+    border-color: 2px solid rgb(0, 0, 0);
+}
+.navegacion-lista ul li ul {
+    position: absolute;
+    left: 0;
+   right: 20px;
+
+    margin-left: 5px;
+    align-items: center;
+    width: 200px;
+    background-color: rgb(193, 192, 194);
+    display: none;
+}
+.navegacion-lista ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgb(137, 137, 139);
+}
+
+.navegacion-lista ul li:hover> ul{
+    display: initial;
+    
+}
+#menu-adaptable {
+    display: none;
+    margin-left: 1px;
+}
+.navegacion-lista label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+
+}
+label {
+    display: none;
+}
+h1::first-letter{
+    color: rgb(219, 108, 4);
+}
+/* Adaptabilidad de la pantalla */
+
+@media (max-width: 1141px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    .marca a {
+        position: relative;
+    }
+    .marca h1 {
+        
+        left: 35%;
+        padding-left: 0;
+        padding-top: 10px;
+        margin: 15px 0 15px 0px;
+        position: absolute;
+    }
+    .logo  {
+        margin-right:0px ;
+        left: 20px;
+    }
+    .navegacion-lista ul{
+        margin-top: 0;
+        left: 10%;
+        position: relative;
+    }
+    .navegacion-lista ul li a {
+        font-size: 20px;
+        padding: 20px;
+        color: #333;
+        display: flex;}
+    .primer-banner{
+        margin-top: 70px;
+    }
+}
+@media(max-width:750px) {
+    header{
+        display: inline-flex;
+    }
+    h1 {
+        width: 100%;
+    }
+    a{
+        position: relative;
+        float: left;
+        left: 10px;
+    }
+    .nombre{
+        position: relative;
+        display: flex;
+        float: left;
+
+    }
+    .logo img {
+        display: none;
+         position: relative;
+        width: 12%;
+        float: left;
+        margin-right: 2px;
+    }
+    .logo {
+        display: flex;
+        position: relative;
+        
+    }
+
+    .navegacion-lista{
+        padding: 10px;}
+    
+    label{
+        display: initial;
+    }
+    header .navegacion-lista{
+        position: absolute;
+        top: 100%; left: 0; right:0 ;
+        background-color: #fff;
+        border-top: 1px solid rgb(23, 8, 68);
+        display: none;
+    }
+
+    header .navegacion-lista ul li {
+        width: 100%;
+    }
+    header .navegacion-lista ul li ul{
+        position: relative;
+        width: 100%;
+       
+    }
+    header .navegacion-lista ul li ul li{
+        
+        left: 0;
+    }
+    #menu-adaptable {
+        position: relative;
+        float: right;
+    }
+    #menu-adaptable:checked ~ .navegacion-lista {
+        display: initial;
+    }
+    
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Neural\ Connect.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container-login {
+    
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .3s ease-out;
+    background-color: #333;
+    opacity: 90%;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    opacity: 90;
+}
+.message {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(93, 9, 146);
+    
+}
+.message h2{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgb(253, 130, 22);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    
+    color: rgb(225, 224, 224);
+}
+.message button:hover{
+    background-color: rgb(228, 220, 228);
+    padding: 1.2rem;
+    background-color: rgba(167, 39, 241, 0.602);
+    text-align: center;
+}
+.create-account {
+    padding: 2.7rem;
+    font-size: 1.7rem;
+}
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.icon {
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem;
+    border: solid thin rgb(29, 29, 29);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .1s ease-in;
+    
+
+}
+.icon:hover{
+    background-color: rgb(243, 132, 22);
+    cursor: pointer;
+
+}
+.free-account {
+    padding: 2rem 0;
+    text-align: center;
+}
+.formulario{
+
+    display: relative;
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: gainsboro;
+    color: rgb(38, 38, 38);
+}
+.formulario input{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(60, 59, 59) thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: rgb(31, 31, 31);
+}
+
+.formulario input[type="button"]{
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: rgb(46, 45, 45);
+}
+.formulario input[type="text"]{
+    color: rgb(50, 49, 49);
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.sign-in.active{
+    opacity: 1;
+    visibility: visible;
+}
+.sign-up.active{
+    opacity: 0;
+    visibility: hidden;
+}

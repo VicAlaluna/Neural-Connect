@@ -127,7 +127,7 @@
   .slick-prev:hover:before, .slick-prev:focus:before,
   .slick-next:hover:before,
   .slick-next:focus:before {
-    opacity: 1;
+    opacity: 10;
   }
   
   .slick-prev.slick-disabled:before,
@@ -182,7 +182,7 @@
   
   /* Dots */
   .slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   
   .slick-dots {

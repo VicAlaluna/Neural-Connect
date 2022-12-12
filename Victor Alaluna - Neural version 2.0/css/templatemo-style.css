@@ -272,6 +272,7 @@ h2 {
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+    
 }
 
 .gallery-slider figure img {
@@ -279,6 +280,7 @@ h2 {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
+
 }
 
 .gallery-slider figure figcaption {
@@ -343,12 +345,30 @@ h2 {
   margin-bottom: 80px;
 }
 
+.robot-experience {
+    background-color: rgb(10, 10, 10);
+    height: 60px;
+    margin-bottom: 20px;
+    opacity: 75%;
+    width: 80%;
+    display: block;
+    position: relative;
+    left: 10%;
+}
+.robot-experience h1{
+    text-align: center;
+    width: 100%;
+    
+    justify-content: center;
+}
+
 /*---------------*/
 /***** Julia *****/
 /*---------------*/
 
 figure.effect-julia {
-	background: #2f3238;
+	background: #18191b;
+    
 }
 
 figure.effect-julia img {
@@ -356,6 +376,8 @@ figure.effect-julia img {
 	transition: opacity 1s, transform 1s;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+    
+    height: 250px;
 }
 
 figure.effect-julia figcaption {
@@ -421,6 +443,7 @@ figure.effect-julia:hover img {
 
 figure.effect-julia:hover p {
 	opacity: 1;
+    text-align: start;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -431,7 +454,7 @@ figure.effect-julia:hover p {
 }
 
 .gallery-slider .slick-dots li {
-    background-color: #ffffff;
+    background-color: #eeeeee;
     width: 20px;
     height: 20px;
     border-radius: 100%;

@@ -1,0 +1,194 @@
+.conteiner-robot {
+    
+    
+    width: 70%;
+}
+/*.contenido-robot {
+    
+    min-width: 300px;
+    max-width: 360px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin:  10px;
+    padding: 25px 0 25px 0;
+    text-align: center;
+    background-color: #0d212c;
+    visibility: visible;
+    border-radius: 5%;
+    -webkit-box-shadow: 0px 0px 6px 0 rgb(0 0 0 / 5%);
+    box-shadow: 0px 0px 6px 0 rgba(12, 1, 65, 0.05);
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+}*/
+.robot{
+    display: flex;
+    left: 25%;
+}
+.highlight {
+    color: #99FF66;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container-fluid {
+    max-width: 1860px;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 1.3rem;
+    padding: 13px 23px;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: white;
+    border: none;
+    color: #333;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #5cac38;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+.gallery-slider figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.gallery-slider figure h2 {
+	word-spacing: -0.15em;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.gallery-slider figure h2 span {
+	font-weight: 800;
+}
+
+.gallery-slider figure h2,
+.gallery-slider figure p {
+	margin: 0;
+}
+
+.gallery-slider figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+.gallery-section {
+  background-color: #99ccff;
+}
+
+.gallery-section .title {
+  padding-right: 13px;
+  margin-bottom: 80px;
+}
+
+figure.robot {
+	background: #2f3238;
+    margin: 20px;
+}
+
+figure.robot img {
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+    height: 350px;
+    width: 300px;
+    margin: 40px 0 40px 0;
+    align-items: center;
+    padding: 10px;
+}
+
+figure.robot figcaption {
+	display: flex;
+  align-items: center;
+}
+
+figure.robot h2 {
+	position: relative;
+	padding: 0.5em 0;
+}
+
+figure.robot p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+
+figure.robot p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.robot p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.robot p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.robot:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+figure.robot:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.robot:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.robot:hover img {
+	opacity: 0.4;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+figure.robot:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
